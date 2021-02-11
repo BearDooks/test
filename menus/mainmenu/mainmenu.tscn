@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://menus/mainmenu/mainmenu.gd" type="Script" id=1]
+
+[node name="mainmenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="joingame" type="Button" parent="."]
+margin_left = 451.0
+margin_top = 274.0
+margin_right = 528.0
+margin_bottom = 294.0
+text = "Join Game"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="joingame" to="." method="_on_joingame_pressed"]
